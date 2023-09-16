@@ -1,4 +1,4 @@
-import { ContactListCard } from 'components/ContactListCard/ContactListCard.jsx';
+import { ContactListCard } from 'components/ContactListCard/ContactListCard.js';
 import { List } from './ContactList.styled';
 
 export const ContactList = ({ contacts, onDelete }) => {

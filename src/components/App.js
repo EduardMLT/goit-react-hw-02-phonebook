@@ -1,8 +1,11 @@
 import { GlobalStyle } from 'GlobalStyle';
 import { Component } from 'react';
-import { ContactForm } from './ContactForm/ContactForm.jsx';
-import { ContactList } from './ContactList/ContactList.jsx';
-import { Filter } from './Filter/Filter.jsx';
+
+import { ContactForm } from './ContactForm/ContactForm.js';
+import { ContactList } from './ContactList/ContactList.js';
+import { Filter } from './Filter/Filter.js';
+
+import { Wrapper } from './App.styled';
 
 export class App extends Component {
   state = {
@@ -53,7 +56,7 @@ export class App extends Component {
 
   render() {
     return (
-      <div>
+      <Wrapper>
         <h1>Phonebook</h1>
         <ContactForm addContact={this.addContact} />
         <h2>Contacts</h2>
@@ -63,7 +66,7 @@ export class App extends Component {
           onDelete={this.deleteContact}
         />
         <GlobalStyle />
-      </div>
+      </Wrapper>
     );
   }
 }

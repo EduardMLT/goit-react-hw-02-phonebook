@@ -5,10 +5,10 @@ export const CardForm = styled(Form)`
   width: 200px;
   display: flex;
   flex-direction: column;
-  gap: 5px;
-  margin-top: 10px;
-  padding-left: 5px;
   border: 1px solid;
+  margin: 15px auto;
+  border-radius: 8px;
+  box-shadow: 1px 1px 8px 0px tomato;
 `;
 
 export const Button = styled.button`
